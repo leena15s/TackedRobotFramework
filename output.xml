@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-11T10:57:38.583187" rpa="false" schemaversion="5">
+<suite id="s1" name="TackedRobotFramework" source="C:\Users\Leena\PycharmProjects\TackedRobotFramework">
+<suite id="s1-s1" name="Tests" source="C:\Users\Leena\PycharmProjects\TackedRobotFramework\Tests">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\Leena\PycharmProjects\TackedRobotFramework\Tests\Test.robot">
+<test id="s1-s1-s1-t1" name="TC05 - Scan Barcode not compatible" line="26">
+<kw name="Open Test Application" owner="Keywords">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-02-11T10:57:38.907798" elapsed="6.963136"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:57:38.906736" elapsed="6.964371"/>
+</kw>
+<kw name="Skip Page" owner="Skippage">
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:53.590591" level="INFO">xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']
+xpath criteria: //android.widget.TextView[@text='تخطي']</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:57:45.872534" elapsed="7.718224"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:53.592892" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='تخطي']'.</msg>
+<msg time="2025-02-11T10:57:53.741955" level="INFO">xpath criteria: //android.widget.TextView[@text='تخطي']</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:57:53.590955" elapsed="0.151103"/>
+</kw>
+<arg>${Skip}</arg>
+<status status="PASS" start="2025-02-11T10:57:45.872202" elapsed="7.869962"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:57:45.871811" elapsed="7.870410"/>
+</kw>
+<kw name="Start Button" owner="Homepages">
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:54.980408" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup
+xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:57:53.743595" elapsed="1.236923"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:54.982076" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup'.</msg>
+<msg time="2025-02-11T10:57:55.140095" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[2]/android.view.ViewGroup</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:57:54.980691" elapsed="0.159538"/>
+</kw>
+<arg>${View}</arg>
+<status status="PASS" start="2025-02-11T10:57:53.743235" elapsed="1.397102"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:57:53.742864" elapsed="1.397649"/>
+</kw>
+<kw name="Select Electrical appliances" owner="Homepages">
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:56.172838" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:57:55.142371" elapsed="1.030578"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:56.174681" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg time="2025-02-11T10:57:56.373271" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:57:56.173333" elapsed="0.200028"/>
+</kw>
+<arg>${elctronDevices}</arg>
+<status status="PASS" start="2025-02-11T10:57:55.141892" elapsed="1.231555"/>
+</kw>
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:57.761198" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_foreground_only_button"]
+xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_foreground_only_button"]</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:57:56.373951" elapsed="1.387376"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:57.762928" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_foreground_only_button"]'.</msg>
+<msg time="2025-02-11T10:57:57.901746" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_foreground_only_button"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:57:57.761556" elapsed="0.140282"/>
+</kw>
+<arg>${alert01}</arg>
+<status status="PASS" start="2025-02-11T10:57:56.373635" elapsed="1.528324"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:57:55.141288" elapsed="2.760717"/>
+</kw>
+<kw name="Select Barcode not compatible" owner="Scanpages">
+<kw name="Select Photo btn" owner="Scanpages">
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:59.197250" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.ImageView
+xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.ImageView</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:57:57.903529" elapsed="1.293871"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:57:59.199222" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.ImageView'.</msg>
+<msg time="2025-02-11T10:57:59.929908" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.ImageView</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:57:59.197682" elapsed="0.732478"/>
+</kw>
+<arg>${Photo}</arg>
+<status status="PASS" start="2025-02-11T10:57:57.903254" elapsed="2.027139"/>
+</kw>
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:00.940979" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]
+xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:57:59.930994" elapsed="1.010228"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:00.942935" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]'.</msg>
+<msg time="2025-02-11T10:58:01.098770" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:58:00.941441" elapsed="0.157426"/>
+</kw>
+<arg>${Allow_photo}</arg>
+<status status="PASS" start="2025-02-11T10:57:59.930650" elapsed="1.168317"/>
+</kw>
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:03.140694" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="com.google.android.documentsui:id/apps_group"]/android.widget.LinearLayout[2]
+xpath criteria: //android.widget.LinearLayout[@resource-id="com.google.android.documentsui:id/apps_group"]/android.widget.LinearLayout[2]
+xpath criteria: //android.widget.LinearLayout[@resource-id="com.google.android.documentsui:id/apps_group"]/android.widget.LinearLayout[2]</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:58:01.099519" elapsed="2.041455"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:03.142904" level="INFO">Clicking element '//android.widget.LinearLayout[@resource-id="com.google.android.documentsui:id/apps_group"]/android.widget.LinearLayout[2]'.</msg>
+<msg time="2025-02-11T10:58:03.274740" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="com.google.android.documentsui:id/apps_group"]/android.widget.LinearLayout[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:58:03.141197" elapsed="0.133644"/>
+</kw>
+<arg>${Photo_btn}</arg>
+<status status="PASS" start="2025-02-11T10:58:01.099185" elapsed="2.175738"/>
+</kw>
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:04.310123" level="INFO">xpath criteria: //android.widget.RelativeLayout</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-11T10:58:03.275410" elapsed="1.034804"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:04.311720" level="INFO">Clicking element '//android.widget.RelativeLayout'.</msg>
+<msg time="2025-02-11T10:58:04.424644" level="INFO">xpath criteria: //android.widget.RelativeLayout</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-11T10:58:04.310387" elapsed="0.114385"/>
+</kw>
+<arg>${Photo_alb}</arg>
+<status status="PASS" start="2025-02-11T10:58:03.275108" elapsed="1.149800"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:57:57.902971" elapsed="6.522020"/>
+</kw>
+<kw name="Wait and Click Element" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-02-11T10:58:30.249259" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.getScreenshot (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:42:5)</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-02-11T10:58:30.235103" elapsed="0.223504">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.getScreenshot (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:42:5)</status>
+</kw>
+<msg time="2025-02-11T10:58:30.460897" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.getScreenshot (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:42:5)</msg>
+<msg time="2025-02-11T10:58:30.462183" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Photo taken on Feb 11, 2025 10:32:59 AM"]</msg>
+<msg time="2025-02-11T10:58:30.462465" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:141:14)
+    at spin (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:143:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:79:12)</msg>
+<arg>${locator}</arg>
+<arg>10 s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2025-02-11T10:58:04.425746" elapsed="26.040402">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:141:14)
+    at spin (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:143:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:79:12)</status>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-11T10:58:30.466626" elapsed="0.000045"/>
+</kw>
+<arg>${Barcode_error}</arg>
+<status status="FAIL" start="2025-02-11T10:58:04.425360" elapsed="26.041482">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:141:14)
+    at spin (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:143:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:79:12)</status>
+</kw>
+<status status="FAIL" start="2025-02-11T10:57:57.902594" elapsed="32.564390">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:141:14)
+    at spin (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:143:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:79:12)</status>
+</kw>
+<status status="FAIL" start="2025-02-11T10:57:38.905291" elapsed="51.562282">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.doFindElementOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:40:5)
+    at doFind (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:47:17)
+    at wrappedCondFn (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:141:14)
+    at spin (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:219:20)
+    at waitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:236:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\timeout.ts:143:12)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:70:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:79:12)</status>
+</test>
+<status status="FAIL" start="2025-02-11T10:57:38.619655" elapsed="51.849585"/>
+</suite>
+<status status="FAIL" start="2025-02-11T10:57:38.618171" elapsed="51.853177"/>
+</suite>
+<status status="FAIL" start="2025-02-11T10:57:38.584684" elapsed="51.888517"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TackedRobotFramework" id="s1" pass="0" fail="1" skip="0">TackedRobotFramework</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">TackedRobotFramework.Tests</stat>
+<stat name="Test" id="s1-s1-s1" pass="0" fail="1" skip="0">TackedRobotFramework.Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-11T10:57:38.895363" level="WARN">Imported resource file 'C:\Users\Leena\PycharmProjects\TackedRobotFramework\configs\Variables.robot' is empty.</msg>
+<msg time="2025-02-11T10:58:30.460897" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Leena\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:350:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.getScreenshot (C:\Users\Leena\.appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:42:5)</msg>
+</errors>
+</robot>
