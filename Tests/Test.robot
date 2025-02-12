@@ -5,8 +5,9 @@ Resource    Pages/Skippage.robot
 Resource    Pages/Homepages.robot    
 Resource    Pages/Scanpages.robot
 Resource    Pages/VehicleServicesPage.robot
-*** Test Cases ***
 
+
+*** Test Cases ***
 TC03 - Scan Valid Refrigerator Barcode
     Open Test Application
     Skip Page
@@ -29,3 +30,21 @@ TC05 - Scan Barcode not compatible
     Start Button
     Select Electrical appliances
     Select Barcode Not Compatible
+    Close Application
+
+
+TC06 - Advanced Search - Fill in all required fields and Search
+
+    Open Test Application
+    Skip Page
+    Start Button
+    Select Electrical appliances
+
+    ${json_data} =  Load Json From File  ${JSON_FILE}
+    ${term1} =  Get Value From Json  ${json_data}  search_terms1
+    ${term2} =  Get Value From Json  ${json_data}  search_terms2
+    ${term3} =  Get Value From Json  ${json_data}  search_terms3
+
+    Perform Search And Undo  ${term1}
+    Perform Search And Undo  ${term2}
+    Perform Search And Undo  ${term3}

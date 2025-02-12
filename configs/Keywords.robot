@@ -1,5 +1,6 @@
 *** Settings ***
 Library    AppiumLibrary
+Library      JSONLibrary
 
 *** Variables ***
 ${ANDROID_AUTOMATION_NAME}    UIAutomator2
@@ -27,10 +28,13 @@ Wait and Click Element
     Wait Until Element Is Visible    ${locator}    10 s
     Click Element    ${locator}
 
+Wait and Input text
+    [Arguments]     ${locator}    ${text}
+    Wait Until Element Is Visible     ${locator}    10 s
+    Input Text      ${locator}    ${text}
 
 
 
-    
 
 
 
