@@ -33,7 +33,7 @@ TC05 - Scan Barcode not compatible
     Close Application
 
 
-TC06 - Advanced Search - Fill in all required fields and Search
+TC07 -Validate Search Functionality based on DDT (json)
 
     Open Test Application
     Skip Page
